@@ -32,7 +32,7 @@ const Map: React.FC<{ origin: string; destination: string; apiKey: string }> = (
       {
         origin,
         destination,
-        travelMode: google.maps.TravelMode.DRIVING,
+        travelMode: google.maps.TravelMode.WALKING,
       },
       (result, status) => {
         if (status === google.maps.DirectionsStatus.OK) {
